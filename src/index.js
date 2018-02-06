@@ -51,10 +51,10 @@ export default {
     // 用户配置
     let aimakeOptions;
     try {
-      aimakeOptions = require(path.join(rootDir, '.legao'));
+      aimakeOptions = require(path.join(rootDir, '.aimake'));
     } catch (e) {
       try {
-        aimakeOptions = fse.readJsonSync(path.join(rootDir, '.legao'));
+        aimakeOptions = fse.readJsonSync(path.join(rootDir, '.aimake'));
       } catch (err) {
         aimakeOptions = {};
       }
